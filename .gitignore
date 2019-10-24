@@ -1,0 +1,4 @@
+*.o
+*.d
+main_Client
+main_Date
