@@ -14,23 +14,24 @@
 
 class Hotel{
 	public:
-		Hotel(std::string t_id, std::string t_nom, std::string t_ville, int t_listechambres); //constructeur
+		Hotel(std::string t_id, std::string t_nom, std::string t_ville, std::vector<int> t_listechambres); //constructeur
 		
-		void setID(std::string t_id)
+		void setID(std::string t_id);	
 		void setNom(std::string t_nom);
 		void setVille(std::string t_ville);
-		void setListeChambres(int t_listechambres);
+		void setListeChambres(std::vector<int> t_listechambres);
 		std::string getID();
 		std::string getNom();
 		std::string getVille();
-		int getListeChambres();
+		std::vector<int>  getListeChambres();
+		void afficherListe();
 		
 	
 	private:
 		std::string m_id; //id unique hotel
 		std::string m_nom; //nom hotel
 		std::string m_ville; //ville hotel
-		vector<int> m_listechambres; //liste des chambres de l'hôtel
+		std::vector<int> m_listechambres; //liste des chambres de l'hôtel
 		
 };
 
