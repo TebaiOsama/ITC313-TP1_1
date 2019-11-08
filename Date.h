@@ -20,7 +20,9 @@ class Date{
 		void setMonth(int t_month); //setter du mois
 		void setYear(int t_year); //setter de l'année
 		void setDate(int t_day, int t_month, int t_year); //setter de la date complete
-				
+		int getDay(); //getter du jour
+		int getMonth(); //getter du mois
+		int getYear(); //getter de l'année
 		
 	private:
 		int m_day;

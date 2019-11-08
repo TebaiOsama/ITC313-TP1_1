@@ -46,3 +46,14 @@ void Date::setDate(int t_day, int t_month, int t_year){
 	m_year=t_year;
 }
 
+int Date::getDay(){
+	return m_day;
+}
+
+int Date::getMonth(){
+	return m_month;
+}
+
+int Date::getYear(){
+	return m_year;
+}
