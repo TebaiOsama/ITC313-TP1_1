@@ -1,9 +1,9 @@
 /** 
-  * File:     hotel.h 
-  * Author:   O. Tebai (Osama_Tebai@etu.u-bourgogne.fr)
+  * File:     Hotel.h 
+  * Author:   O.Tebai (Osama_Tebai@etu.u-bourgogne.fr)
   * Date:     Fall 2019 
   * Course:   C-C++ Programming / Esirem 3A Informatique Electronique 
-  * Summary:  Declaration of the class Date
+  * Summary:  Declaration of the class Hotel
   */
 
 #ifndef _hotel_h
