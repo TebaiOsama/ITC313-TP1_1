@@ -35,6 +35,6 @@ class Hotel{
 		std::string m_ville; //ville hotel
 		std::vector<int> m_listechambres; //liste des chambres de l'hôtel
 		
-};
+}; 
 
 #endif
