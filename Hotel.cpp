@@ -7,7 +7,7 @@
   */
 
 #include <string>
-#include "hotel.h"
+#include "Hotel.h"
 #include <vector>
 #include <array>
 #include <iostream>
