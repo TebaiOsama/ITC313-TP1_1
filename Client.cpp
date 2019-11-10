@@ -32,7 +32,7 @@ void Client::setNbrReservation(int t_nbrReservation){
 
 std::string Hotel::getID(){
 	return m_id;
-}
+} 
 
 std::string Client::getNom(){
 	return m_nom;
