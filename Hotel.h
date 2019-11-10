@@ -6,8 +6,8 @@
   * Summary:  Declaration of the class Hotel
   */
 
-#ifndef _hotel_h
-#define _hotel_h
+#ifndef _Hotel_h
+#define _Hotel_h
 
 #include <string>
 #include <vector>
@@ -15,15 +15,17 @@
 class Hotel{
 	public:
 		Hotel(std::string t_id, std::string t_nom, std::string t_ville, std::vector<int> t_listechambres); //constructeur
-		
+		//setters
 		void setID(std::string t_id);	
 		void setNom(std::string t_nom);
 		void setVille(std::string t_ville);
 		void setListeChambres(std::vector<int> t_listechambres);
+		//getters
 		std::string getID();
 		std::string getNom();
 		std::string getVille();
 		std::vector<int>  getListeChambres();
+		//methodes
 		void afficherListe();
 		
 	
