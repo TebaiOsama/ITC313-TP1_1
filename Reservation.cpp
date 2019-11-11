@@ -1,10 +1,7 @@
 /** 
   * File:     Reservation.cpp 
-<<<<<<< HEAD
   * Author:   O.Tebai (Osama_Tebai@etu.u-bourgogne.fr)
-=======
   * Author:   O. Tebai (Osama_Tebai@etu.u-bourgogne.fr)
->>>>>>> 513de406f22bc753a03e98b85ec92d24f0d55dd7
   * Date:     Fall 2019 
   * Course:   C-C++ Programming / Esirem 3A Informatique Electronique 
   * Summary:  Definition of the class Reservation
@@ -106,8 +103,6 @@ int Reservation::getSejour(){
 
 double Reservation::montantTotal(double t_montant, double t_remise){
 	return getSejour()*(t_montant-t_remise*t_montant);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 513de406f22bc753a03e98b85ec92d24f0d55dd7
+
+
