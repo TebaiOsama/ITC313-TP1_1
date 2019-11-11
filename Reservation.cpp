@@ -40,7 +40,7 @@ int Reservation::getIdChambre(){
 	return m_id_chambre;
 }
 int Reservation::getIdClient(){
-	return m_id_client;
+	return m_id_client; 
 }
 double Reservation::getMontant(){
 	return m_montant;
