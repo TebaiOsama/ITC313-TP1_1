@@ -9,22 +9,23 @@
 #ifndef _Hotel_h
 #define _Hotel_h
 
+#include "Chambre.h"
 #include <string>
 #include <vector>
 
 class Hotel{
 	public:
-		Hotel(std::string t_id, std::string t_nom, std::string t_ville, std::vector<int> t_listechambres); //constructeur
+		Hotel(std::string t_id, std::string t_nom, std::string t_ville, std::vector<Chambre> t_listechambres); //constructeur
 		//setters
-		void setID(std::string t_id);	
+		void setId(std::string t_id);	
 		void setNom(std::string t_nom);
 		void setVille(std::string t_ville);
-		void setListeChambres(std::vector<int> t_listechambres);
+		void setListeChambres(std::vector<Chambre> t_listechambres);
 		//getters
-		std::string getID();
+		std::string getId();
 		std::string getNom();
 		std::string getVille();
-		std::vector<int>  getListeChambres();
+		std::vector<Chambre> getListeChambres();
 		//methodes
 		void afficherListe();
 		
@@ -33,8 +34,8 @@ class Hotel{
 		std::string m_id; //id unique hotel
 		std::string m_nom; //nom hotel
 		std::string m_ville; //ville hotel
-		std::vector<int> m_listechambres; //liste des chambres de l'hôtel
+		std::vector<Chambre> m_listechambres; //liste des chambres de l'hôtel
 		
-};
+};	
 
 #endif
