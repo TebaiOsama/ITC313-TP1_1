@@ -25,9 +25,11 @@ class Chambre{
  	void setIdChambre(int t_id);
  	void setPrixParNuit(double t_prix_par_nuit);
  	void setType(int t_type);
+ 	//methodes
+ 	void affichageChambres();
 
  private:
- 	int m_id; //identifiant unique de la chambre
+ 	int m_id_chambre; //identifiant unique de la chambre
  	double m_prix_par_nuit; //prix par nuit d'une chambre
  	int m_type; //type de la chambre (ex. Single=0, Double=1)
 

@@ -13,7 +13,6 @@
 #include <array>
 #include <iostream>
 
-Hotel::Hotel(){}
 
 Hotel::Hotel(std::string t_id_hotel, std::string t_nom_hotel, std::string t_ville_hotel, std::vector<Chambre> t_listechambres){
 	m_id_hotel = t_id_hotel;
@@ -53,8 +52,15 @@ std::vector<Chambre> Hotel::getListeChambres(){
 
 void Hotel::afficherListe(){
 	for(int i=0; i<m_listechambres.size();i++){
-		std::cout<<m_listechambres[i].getIdChambre()<<std::endl;
-		std::cout<<m_listechambres[i].getPrixParNuit()<<std::endl;
-		std::cout<<m_listechambres[i].getType()<<std::endl;
+		std::cout<<"ID = "<<m_listechambres[i].getIdChambre()<<std::endl;
+		std::cout<<"Prix par nuit = "<<m_listechambres[i].getPrixParNuit()<<std::endl;
+		std::cout<<"Type de chambre = "<<m_listechambres[i].getType()<<std::endl<<std::endl;
 	}
+}
+
+void Hotel::affichageHotel(){
+	std::cout<<"Le hotel avec ID = "<<m_id_hotel<<" s'appelle "<<m_nom_hotel<<" et se trouve à "<<m_ville_hotel<<"."<<std::endl;
+	std::cout<<"La liste de toutes les chambres est : "<<std::endl;
+	afficherListe();
+
 }
