@@ -1,9 +1,9 @@
 /** 
-  * File:     main_hotel.cpp 
-  * Author:   O. Tebai/F.Forrer (Osama_Tebai@etu.u-bourgogne.fr/Francois_Forrer@etu.u-bourgogne.fr)
+  * File:     main.cpp 
+  * Authors:   O. Tebai/F.Forrer (Osama_Tebai@etu.u-bourgogne.fr/Francois_Forrer@etu.u-bourgogne.fr)
   * Date:     Fall 2019 
   * Course:   C-C++ Programming / Esirem 3A Informatique Electronique 
-  * Summary:  Test Client hotel
+  * Summary:  main program
   */
 
 
@@ -18,19 +18,22 @@
 
 int main(){
 	int types[10]={0,0,0,1,1,1,1,1,2,2};
-	double prix;
+	std::string nom, prenom;
 	std::vector<Chambre> ListeChambre;
+	std::vector<Client> ListeClient;
 
 	for(int i=0; i<10; i++){
-		if(types[i]==0)
-			prix=100;
-		else if(types[i]==1)
-			prix=125;
-		else
-			prix=210;
-
-		ListeChambre.push_back(Chambre(i+1,prix,types[i]));	
+		ListeChambre.push_back(Chambre(i+1,types[i]==0?100:types[i]==1?125:210,types[i]));	//types[i]==0?100 veux dire if(types[i]==0){prix=100} 
 	}
+
+
+	for(int i=0; i<16; i++){
+		/*std::cout<<"NOM et Prénom du client : ";
+		std::cin>>nom>>" ">>prenom;*/
+		ListeClient.push_back(Client(i+1,/*nom,prenom,*/"AAA","Aaa"));	
+	}
+
+
 
 	Hotel Hotello("123456","Le Lux","Dijon",ListeChambre);
 
