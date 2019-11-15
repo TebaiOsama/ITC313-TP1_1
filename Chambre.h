@@ -32,7 +32,6 @@ class Chambre{
  	int m_id_chambre; //identifiant unique de la chambre
  	double m_prix_par_nuit; //prix par nuit d'une chambre
  	int m_type; //type de la chambre (ex. Single=0, Double=1)
-
 };
 
 #endif
