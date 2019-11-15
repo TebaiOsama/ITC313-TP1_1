@@ -1,12 +1,13 @@
 /** 
   * File:     Client.cpp 
-  * Author:   O.Tebai (Osama_Tebai@etu.u-bourgogne.fr)
+  * Authors:  O.Tebai/F.Forrer (Osama_Tebai@etu.u-bourgogne.fr/Francois_Forrer@etu.u-bourgogne.fr)
   * Date:     Fall 2019 
   * Course:   C-C++ Programming / Esirem 3A Informatique Electronique 
   * Summary:  Definition of the class Client
   */
 
 #include <string>
+#include <iostream>
 #include "Client.h"
 #include "Hotel.h"
 
@@ -45,3 +46,7 @@ int Client::getNbrReservation(){
 	return m_nbrReservation;
 }
 
+void Client::affichageClient(){
+	std::string singplur=(m_nbrReservation<=1)?" reservation":" reservations"; //variable pour savoir si ajouter un s ou pas
+	std::cout<<"Le client avec un ID de "<<m_id_client<<" s'appelle "<<m_nom_client<<" "<<m_prenom_client<<", et il a fait "<<m_nbrReservation<<singplur<<std::endl;
+}
