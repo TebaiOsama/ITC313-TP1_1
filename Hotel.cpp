@@ -13,7 +13,6 @@
 #include <array>
 #include <iostream>
 
-Hotel::Hotel(){}
 
 Hotel::Hotel(std::string t_id_hotel, std::string t_nom_hotel, std::string t_ville_hotel, std::vector<Chambre> t_listechambres){
 	m_id_hotel = t_id_hotel;
