@@ -9,10 +9,6 @@
 #include "Hotel.h"
 #include "Chambre.h"
 #include <string>
-<<<<<<< HEAD
-=======
-#include "Hotel.h"
->>>>>>> 61823df5c088c8bbe5402c95ecddf8e4538535b0
 #include <vector>
 #include <array>
 #include <iostream>

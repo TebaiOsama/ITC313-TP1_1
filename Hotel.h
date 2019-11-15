@@ -38,10 +38,6 @@ class Hotel{
 		std::string m_ville_hotel; //ville hotel
 		std::vector<Chambre> m_listechambres; //liste des chambres de l'hôtel
 		
-<<<<<<< HEAD
 };	
-=======
-}; 
->>>>>>> 61823df5c088c8bbe5402c95ecddf8e4538535b0
 
 #endif

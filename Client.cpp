@@ -31,15 +31,9 @@ void Client::setNbrReservation(int t_nbrReservation){
 	m_nbrReservation = t_nbrReservation;
 }
 
-<<<<<<< HEAD
-std::string Hotel::getID(){
-	return m_id;
-} 
-=======
 int Client::getIdClient(){
 	return m_id_client;
 }
->>>>>>> dev
 
 std::string Client::getNomClient(){
 	return m_nom_client;
