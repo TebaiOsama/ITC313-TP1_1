@@ -29,11 +29,16 @@ int main(){
 
 	for(int i=0; i<16; i++){
 		/*std::cout<<"NOM et Prénom du client : ";
-		std::cin>>nom>>" ">>prenom;*/
+		std::cin>>nom>>prenom;*/
 		ListeClient.push_back(Client(i+1,/*nom,prenom,*/"AAA","Aaa"));	
 	}
 
 
+	for(int i=0; i<5; i++){
+		/*std::cout<<"NOM et Prénom du client : ";
+		std::cin>>nom>>" ">>prenom;*/
+		ListeClient[i].affichageClient();	
+	}
 
 	Hotel Hotello("123456","Le Lux","Dijon",ListeChambre);
 
