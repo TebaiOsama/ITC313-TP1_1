@@ -8,37 +8,44 @@
 
 #include <string>
 #include "Client.h"
+#include "Hotel.h"
 
-Client::Client(int t_id, std::string t_nom, std::string t_prenom, int t_nbrReservation){
-	m_id = t_id;
-	m_nom = t_nom;
-	m_prenom = t_prenom;
+Client::Client(int t_id_client, std::string t_nom_client, std::string t_prenom_client, int t_nbrReservation){
+	m_id_client = t_id_client;
+	m_nom_client = t_nom_client;
+	m_prenom_client = t_prenom_client;
 	m_nbrReservation = t_nbrReservation;
 }
 
-void Hotel::setID(std::string t_id){
-	m_id = t_id;
+void Client::setIdClient(int t_id_client){
+	m_id_client = t_id_client;
 }
 
-void Client::setNom(std::string t_nom){
-	m_nom = t_nom;
+void Client::setNomClient(std::string t_nom_client){
+	m_nom_client = t_nom_client;
 }
-void Client::setPrenom(std::string t_prenom){
-	m_prenom = t_prenom;
+void Client::setPrenomClient(std::string t_prenom_client){
+	m_prenom_client = t_prenom_client;
 }
 void Client::setNbrReservation(int t_nbrReservation){
 	m_nbrReservation = t_nbrReservation;
 }
 
+<<<<<<< HEAD
 std::string Hotel::getID(){
 	return m_id;
 } 
-
-std::string Client::getNom(){
-	return m_nom;
+=======
+int Client::getIdClient(){
+	return m_id_client;
 }
-std::string Client::getPrenom(){
-	return m_prenom;
+>>>>>>> dev
+
+std::string Client::getNomClient(){
+	return m_nom_client;
+}
+std::string Client::getPrenomClient(){
+	return m_prenom_client;
 }
 int Client::getNbrReservation(){
 	return m_nbrReservation;

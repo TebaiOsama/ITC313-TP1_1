@@ -13,15 +13,16 @@
 
 class Chambre{
  public:
+ 	Chambre();
  	Chambre(int t_id, double t_prix_par_nuit, int t_type=0); //constructeur avec 
  															 //comme type de chambre de base Single
  	//getters
- 	int getId();
+ 	int getIdChambre();
  	double getPrixParNuit();
  	std::string getType();
  	//setters
  	void setChambre(int t_id, double t_prix_par_nuit, int t_type);
- 	void setId(int t_id);
+ 	void setIdChambre(int t_id);
  	void setPrixParNuit(double t_prix_par_nuit);
  	void setType(int t_type);
 

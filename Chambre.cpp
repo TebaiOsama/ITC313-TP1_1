@@ -16,7 +16,7 @@ Chambre::Chambre(int t_id, double t_prix_par_nuit, int t_type){
 	m_type = t_type;
 }
 
-int Chambre::getId(){
+int Chambre::getIdChambre(){
 	return m_id;
 }
 
@@ -35,7 +35,7 @@ void Chambre::setChambre(int t_id, double t_prix_par_nuit, int t_type){
 	m_type = t_type;
 }
 
-void Chambre::setId(int t_id){
+void Chambre::setIdChambre(int t_id){
 	m_id = t_id;
 }
 

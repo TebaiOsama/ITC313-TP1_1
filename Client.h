@@ -13,22 +13,22 @@
 
 class Client{
 	public:
-		Client(int t_id, std::string t_nom, std::string t_prenom, int t_nbrReservation=0); //constructeur
+		Client(int t_id_client, std::string t_nom_client, std::string t_prenom_client, int t_nbrReservation=0); //constructeur
 		
-		void setID(std::string t_id);
-		void setNom(std::string t_nom);
-		void setPrenom(std::string t_prenom);
+		void setIdClient(int t_id_client);
+		void setNomClient(std::string t_nom_client);
+		void setPrenomClient(std::string t_prenom_client);
 		void setNbrReservation(int t_nbrReservation);
-		std::string getID();
-		std::string getNom();
-		std::string getPrenom();
+		int getIdClient();
+		std::string getNomClient();
+		std::string getPrenomClient();
 		int getNbrReservation();
 			
 	
 	private:
-		int m_id; //id unique utilisateur
-		std::string m_nom; //nom client
-		std::string m_prenom; //prenom client
+		int m_id_client; //id unique utilisateur
+		std::string m_nom_client; //nom client
+		std::string m_prenom_client; //prenom client
 		int m_nbrReservation; //nombre de reservactions effectués au total 
 		
 };
