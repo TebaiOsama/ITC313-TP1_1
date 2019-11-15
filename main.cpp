@@ -42,5 +42,34 @@ int main(){
 
 	Hotel Hotello("123456","Le Lux","Dijon",ListeChambre);
 
+	//************************************************************************************************
+
+	int d_day, d_month, d_year, f_day, f_month, f_year;
+
+	std::cout<<"Date d'arrivée du client (ex: 20 10 2021) : ";
+	std::cin>>d_day>>d_month>>d_year;
+	Date debut(d_day, d_month, d_year);
+
+	std::cout<<"Date de départ du client (ex: 21 10 2021) : ";
+	std::cin>>f_day>>f_month>>f_year;
+	Date fin(f_day, f_month, f_year);
+
+
+	//***********************************************************************************************
+
+	if(f_year-d_year<0){
+		std::cout<<"erreur de dates";
+	}
+	else if(f_year-d_year==0){
+		if(f_month-d_month<0){
+		std::cout<<"erreur de dates";
+		}
+		else if (f_month-d_month==0){
+			if(f_day-d_day<=0){
+			std::cout<<"erreur de dates";
+			}
+		}	
+	}
+	
 	return 0;
 }
