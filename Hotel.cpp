@@ -13,37 +13,39 @@
 #include <array>
 #include <iostream>
 
-Hotel::Hotel(std::string t_id, std::string t_nom, std::string t_ville, std::vector<Chambre> t_listechambres){
-	m_id = t_id;
-	m_nom = t_nom;
-	m_ville = t_ville;
+Hotel::Hotel(){}
+
+Hotel::Hotel(std::string t_id_hotel, std::string t_nom_hotel, std::string t_ville_hotel, std::vector<Chambre> t_listechambres){
+	m_id_hotel = t_id_hotel;
+	m_nom_hotel = t_nom_hotel;
+	m_ville_hotel = t_ville_hotel;
 	m_listechambres=t_listechambres;
 }
 
-void Hotel::setId(std::string t_id){
-	m_id = t_id;
+void Hotel::setIdHotel(std::string t_id_hotel){
+	m_id_hotel = t_id_hotel;
 }
 
-void Hotel::setNom(std::string t_nom){
-	m_nom = t_nom;
+void Hotel::setNomHotel(std::string t_nom_hotel){
+	m_nom_hotel = t_nom_hotel;
 }
-void Hotel::setVille(std::string t_ville){
-	m_ville = t_ville;
+void Hotel::setVilleHotel(std::string t_ville_hotel){
+	m_ville_hotel = t_ville_hotel;
 }
 
 void Hotel::setListeChambres(std::vector<Chambre> t_listechambres){
 	m_listechambres=t_listechambres;
 }
 
-std::string Hotel::getId(){
-	return m_id;
+std::string Hotel::getIdHotel(){
+	return m_id_hotel;
 }
 
-std::string Hotel::getNom(){
-	return m_nom;
+std::string Hotel::getNomHotel(){
+	return m_nom_hotel;
 }
-std::string Hotel::getVille(){
-	return m_ville;
+std::string Hotel::getVilleHotel(){
+	return m_ville_hotel;
 }
 std::vector<Chambre> Hotel::getListeChambres(){
 	return m_listechambres;
@@ -51,9 +53,8 @@ std::vector<Chambre> Hotel::getListeChambres(){
 
 void Hotel::afficherListe(){
 	for(int i=0; i<m_listechambres.size();i++){
-		std::cout<<m_listechambres[i].getId()<<std::endl;
+		std::cout<<m_listechambres[i].getIdChambre()<<std::endl;
 		std::cout<<m_listechambres[i].getPrixParNuit()<<std::endl;
 		std::cout<<m_listechambres[i].getType()<<std::endl;
 	}
 }
-		
