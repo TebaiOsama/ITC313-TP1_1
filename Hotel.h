@@ -1,6 +1,6 @@
 /** 
   * File:     Hotel.h 
-  * Author:   O.Tebai (Osama_Tebai@etu.u-bourgogne.fr)
+  * Authors:  O.Tebai/F.Forrer (Osama_Tebai@etu.u-bourgogne.fr/Francois_Forrer@etu.u-bourgogne.fr)
   * Date:     Fall 2019 
   * Course:   C-C++ Programming / Esirem 3A Informatique Electronique 
   * Summary:  Declaration of the class Hotel
@@ -15,7 +15,6 @@
 
 class Hotel{
 	public:
-		Hotel();
 		Hotel(std::string t_id, std::string t_nom, std::string t_ville, std::vector<Chambre> t_listechambres); //constructeur
 		//setters
 		void setIdHotel(std::string t_id);	
@@ -29,8 +28,8 @@ class Hotel{
 		std::vector<Chambre> getListeChambres();
 		//methodes
 		void afficherListe(); //affichage id, type et prix de chaque chambres
-		std::vector<Chambre*> remplissageTableauChambres(int* t_tab_types); //remplir une liste de chambres
-		
+		void affichageHotel(); //affichage id, nom et ville d'un hotel
+
 	
 	private:
 		std::string m_id_hotel; //id unique hotel
