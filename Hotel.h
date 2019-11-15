@@ -13,6 +13,7 @@
 #include <string>
 #include <vector>
 
+
 class Hotel{
 	public:
 		Hotel(std::string t_id, std::string t_nom, std::string t_ville, std::vector<Chambre> t_listechambres); //constructeur
